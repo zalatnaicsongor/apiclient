@@ -1,4 +1,4 @@
-package hu.zalatnai;
+package hu.zalatnai.foodhygieneratings;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

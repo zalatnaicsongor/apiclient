@@ -1,4 +1,4 @@
-package hu.zalatnai;
+package hu.zalatnai.foodhygieneratings;
 
 import javax.validation.constraints.NotNull;
 
