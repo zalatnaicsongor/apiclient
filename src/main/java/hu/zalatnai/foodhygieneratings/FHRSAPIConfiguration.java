@@ -3,30 +3,26 @@ package hu.zalatnai.foodhygieneratings;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @ConfigurationProperties(prefix = "fhrsapi")
 public class FHRSAPIConfiguration {
     @NotNull
-    private String authoritiesBasicUri;
+    private String uri;
 
-    @NotNull
-    private String establishmentsUri;
-
-    public String getAuthoritiesBasicUri() {
-        return authoritiesBasicUri;
+    public String getUri() {
+        return uri;
     }
 
-    public void setAuthoritiesBasicUri(String authoritiesBasicUri) {
-        this.authoritiesBasicUri = authoritiesBasicUri;
+    public void setUri(String uri) {
+        this.uri = uri;
     }
 
-    public String getEstablishmentsUri() {
-        return establishmentsUri;
-    }
-
-    public void setEstablishmentsUri(String establishmentsUri) {
-        this.establishmentsUri = establishmentsUri;
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }

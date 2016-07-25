@@ -4,3 +4,6 @@ to communicate with FHR's API.
 
 I aimed for the simplest solution which fulfills the specifications, therefore I only implemented a very simple blocking
 version of the API client. A non-blocking version of the API client can be implemented easily using Spring's AsyncRestTemplate.
+
+Possible improvements:
+- Pre-loading or caching the list of local authorities
