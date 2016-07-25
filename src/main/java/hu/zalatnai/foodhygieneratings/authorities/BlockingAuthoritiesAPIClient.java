@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class BlockingAuthoritiesAPIClient implements AuthoritiesAPIClient {
-    static final String AUTHORITIES_BASIC_API_ENDPOINT = "/Authorities/basic";
+    public static final String AUTHORITIES_BASIC_API_ENDPOINT = "/Authorities/basic";
 
     private final FHRSAPIConfiguration configuration;
     private final RestTemplate restTemplate;
@@ -47,6 +47,8 @@ public class BlockingAuthoritiesAPIClient implements AuthoritiesAPIClient {
                 Authorities.class
             ).getBody().authorities;
         } catch (RestClientException e) {
+            //The client should be made aware that the service is unavailable in the case of the API returning
+            //a non-200 status code.
             throw new ServiceUnavailableException(e);
         }
     }

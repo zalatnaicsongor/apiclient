@@ -13,7 +13,7 @@ public class Authority {
     private final String name;
 
     @JsonCreator
-    public Authority(@JsonProperty("LocalAuthorityId") int id, @JsonProperty("Name") String name) {
+    Authority(@JsonProperty("LocalAuthorityId") int id, @JsonProperty("Name") String name) {
         this.id = id;
         this.name = name;
     }
