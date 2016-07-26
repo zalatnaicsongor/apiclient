@@ -1,9 +1,6 @@
 package hu.zalatnai.foodhygieneratings;
 
-import java.util.HashMap;
-
 import com.github.restdriver.clientdriver.ClientDriverRule;
-import hu.zalatnai.foodhygieneratings.authorities.Authority;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +13,7 @@ import static com.github.restdriver.clientdriver.RestClientDriver.giveEmptyRespo
 import static com.github.restdriver.clientdriver.RestClientDriver.giveResponse;
 import static com.github.restdriver.clientdriver.RestClientDriver.onRequestTo;
 import static hu.zalatnai.foodhygieneratings.TestResources.AUTHORITIES_RESPONSE;
-import static hu.zalatnai.foodhygieneratings.authorities.BlockingAuthoritiesAPIClient.AUTHORITIES_BASIC_API_ENDPOINT;
+import static hu.zalatnai.foodhygieneratings.FHRSAPIConfiguration.AUTHORITIES_BASIC_API_ENDPOINT;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 

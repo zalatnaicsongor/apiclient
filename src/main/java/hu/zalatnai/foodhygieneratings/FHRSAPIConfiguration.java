@@ -10,6 +10,9 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 @ConfigurationProperties(prefix = "fhrsapi")
 public class FHRSAPIConfiguration {
+    public static final String AUTHORITIES_BASIC_API_ENDPOINT = "/Authorities/basic";
+    public static final String ESTABLISHMENTS_BASIC_API_ENDPOINT = "/Establishments";
+
     @NotNull
     private String uri;
 

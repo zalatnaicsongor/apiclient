@@ -61,8 +61,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.restdocs:spring-restdocs-mockmvc:1.0.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.restdocs:spring-restdocs-core:1.0.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.rest-driver:rest-client-driver:2.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.rest-driver:rest-driver-shared:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.github.rest-driver:rest-client-driver:1.1.43" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.github.rest-driver:rest-driver-shared:1.1.43" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.jayway.jsonpath:json-path:2.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:asm:1.0.2" level="project" />

@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import static com.github.restdriver.clientdriver.RestClientDriver.*;
 import static hu.zalatnai.foodhygieneratings.TestResources.AUTHORITIES_RESPONSE;
-import static hu.zalatnai.foodhygieneratings.authorities.BlockingAuthoritiesAPIClient.AUTHORITIES_BASIC_API_ENDPOINT;
+import static hu.zalatnai.foodhygieneratings.FHRSAPIConfiguration.AUTHORITIES_BASIC_API_ENDPOINT;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 

@@ -51,7 +51,7 @@
 		<dependency>
 			<groupId>com.github.rest-driver</groupId>
 			<artifactId>rest-client-driver</artifactId>
-			<version>2.0.0</version>
+			<version>1.1.43</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
