@@ -29,7 +29,7 @@ public class EstablishmentRatingsDistributionServiceTest {
     @InjectMocks
     private EstablishmentRatingsDistributionService establishmentRatingsDistributionService;
 
-    private List<Rating> ratings = Collections.singletonList(Rating.FIVE);
+    private List<Rating> ratings = Collections.singletonList(new Rating("Dog"));
 
     @Before
     public void setUp() throws Exception {

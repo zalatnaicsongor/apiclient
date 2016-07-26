@@ -23,11 +23,11 @@ public class RatingsDistributionTest {
 
     @Test
     public void calculatesTheDistributionCorrectlyOfTheRatings() {
-        List<Rating> ratings = Arrays.asList(Rating.FIVE, Rating.FIVE, Rating.ONE, Rating.EXEMPT_FHRS);
-        Map<Rating, Double> distribution = new RatingsDistribution(ratings).getDistribution();
-        assertThat(distribution.get(Rating.FIVE), is(0.5));
-        assertThat(distribution.get(Rating.ONE), is(0.25));
-        assertThat(distribution.get(Rating.EXEMPT_FHRS), is(0.25));
+        List<Rating> ratings = Arrays.asList(new Rating("Dog"), new Rating("Dog"), new Rating("Cat"), new Rating("Cow"));
+        Map<String, Double> distribution = new RatingsDistribution(ratings).getDistribution();
+        assertThat(distribution.get("Dog"), is(0.5));
+        assertThat(distribution.get("Cat"), is(0.25));
+        assertThat(distribution.get("Cow"), is(0.25));
         assertThat(distribution.size(), is(3));
     }
 }

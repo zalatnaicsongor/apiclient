@@ -1,6 +1,7 @@
 package hu.zalatnai.foodhygieneratings.establishments;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.github.restdriver.clientdriver.ClientDriverRule;
 import hu.zalatnai.foodhygieneratings.FHRSAPIConfiguration;
@@ -61,10 +62,11 @@ public class BlockingEstablishmentRatingsAPIClientTest {
         );
 
         List<Rating> ratings = apiClient.getRatingsForAuthority(127);
+        List<String> ratingKeys = ratings.stream().map(Rating::getRatingKey).collect(Collectors.toList());
 
         assertThat(
-            ratings,
-            containsInAnyOrder(Rating.FIVE, Rating.FIVE, Rating.ONE, Rating.EXEMPT_FHRS)
+            ratingKeys,
+            containsInAnyOrder("fhrs_5_en-gb", "fhrs_5_en-gb", "fhrs_1_en-gb", "fhrs_exempt_en-gb")
         );
     }
 }
