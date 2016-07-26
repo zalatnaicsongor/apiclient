@@ -4,8 +4,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import hu.zalatnai.foodhygieneratings.shared.NoRatingsException;
-
 import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.*;
 

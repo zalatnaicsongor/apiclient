@@ -64,7 +64,7 @@ public class BlockingEstablishmentRatingsAPIClientTest {
 
         assertThat(
             ratings,
-            containsInAnyOrder(Rating.FIVE, Rating.FIVE, Rating.ONE, Rating.EXEMPT)
+            containsInAnyOrder(Rating.FIVE, Rating.FIVE, Rating.ONE, Rating.EXEMPT_FHRS)
         );
     }
 }

@@ -9,17 +9,18 @@ The front-end can easily infer which table (FHRS or FHIS) to render by looking a
 Assumption: There are no regions where both FHRS and FHIS SchemeType is used.
  */
 public enum Rating {
-    FIVE("5"),
-    FOUR("4"),
-    THREE("3"),
-    TWO("2"),
-    ONE("1"),
-    ZERO("0"),
-    EXEMPT("Exempt"),
-    PASS("Pass"),
-    IMRPOVMENT_REQUIRED("Improvement Required"),
-    AWAITING_PUBLICATION("Awaiting Publication"),
-    AWAITING_INSPECTION("Awaiting Inspection");
+    FIVE("fhrs_5_en-gb"),
+    FOUR("fhrs_4_en-gb"),
+    THREE("fhrs_3_en-gb"),
+    TWO("fhrs_2_en-gb"),
+    ONE("fhrs_1_en-gb"),
+    ZERO("fhrs_0_en-gb"),
+    EXEMPT_FHRS("fhrs_exempt_en-gb"),
+    EXEMPT_FHIS("fhis_exempt_en-gb"),
+    PASS("fhis_pass_en-gb"),
+    IMRPOVMENT_REQUIRED("fhis_improvement_required_en-gb"),
+    AWAITING_PUBLICATION("fhis_awaiting_publication_en-gb"),
+    AWAITING_INSPECTION("fhis_awaiting_inspection_en-gb");
 
     private String value;
 

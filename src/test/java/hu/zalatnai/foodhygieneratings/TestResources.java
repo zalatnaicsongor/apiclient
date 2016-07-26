@@ -108,7 +108,7 @@ public class TestResources {
         "      \"PostCode\": \"sample string 10\",\n" +
         "      \"Phone\": \"sample string 11\",\n" +
         "      \"RatingValue\": \"5\",\n" +
-        "      \"RatingKey\": \"sample string 13\",\n" +
+        "      \"RatingKey\": \"fhrs_5_en-gb\",\n" +
         "      \"RatingDate\": \"2016-07-25T05:26:19.9723496+01:00\",\n" +
         "      \"LocalAuthorityCode\": \"sample string 17\",\n" +
         "      \"LocalAuthorityName\": \"sample string 19\",\n" +
@@ -155,7 +155,7 @@ public class TestResources {
         "      \"PostCode\": \"sample string 10\",\n" +
         "      \"Phone\": \"sample string 11\",\n" +
         "      \"RatingValue\": \"5\",\n" +
-        "      \"RatingKey\": \"sample string 13\",\n" +
+        "      \"RatingKey\": \"fhrs_5_en-gb\",\n" +
         "      \"RatingDate\": \"2016-07-25T05:26:19.9723496+01:00\",\n" +
         "      \"LocalAuthorityCode\": \"sample string 17\",\n" +
         "      \"LocalAuthorityName\": \"sample string 19\",\n" +
@@ -202,7 +202,7 @@ public class TestResources {
         "      \"PostCode\": \"sample string 10\",\n" +
         "      \"Phone\": \"sample string 11\",\n" +
         "      \"RatingValue\": \"1\",\n" +
-        "      \"RatingKey\": \"sample string 13\",\n" +
+        "      \"RatingKey\": \"fhrs_1_en-gb\",\n" +
         "      \"RatingDate\": \"2016-07-25T05:26:19.9723496+01:00\",\n" +
         "      \"LocalAuthorityCode\": \"sample string 17\",\n" +
         "      \"LocalAuthorityName\": \"sample string 19\",\n" +
@@ -249,7 +249,7 @@ public class TestResources {
         "      \"PostCode\": \"sample string 10\",\n" +
         "      \"Phone\": \"sample string 11\",\n" +
         "      \"RatingValue\": \"Exempt\",\n" +
-        "      \"RatingKey\": \"sample string 13\",\n" +
+        "      \"RatingKey\": \"fhrs_exempt_en-gb\",\n" +
         "      \"RatingDate\": \"2016-07-25T05:26:19.9723496+01:00\",\n" +
         "      \"LocalAuthorityCode\": \"sample string 17\",\n" +
         "      \"LocalAuthorityName\": \"sample string 19\",\n" +

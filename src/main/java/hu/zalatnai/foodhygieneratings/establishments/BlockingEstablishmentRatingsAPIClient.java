@@ -72,7 +72,7 @@ public class BlockingEstablishmentRatingsAPIClient implements EstablishmentRatin
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     static class RatingContainer {
-        @JsonProperty("RatingValue")
+        @JsonProperty("RatingKey")
         private Rating rating;
 
         Rating getRating() {
