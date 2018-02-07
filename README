@@ -1,8 +1,5 @@
-A simple REST API which wraps the FHR service. The front-end is a separate AngularJS application which uses this service
-to communicate with FSA's FHR API.
+A simple REST API which communicates the FHR service. The front-end is a separate AngularJS application which uses this service to communicate with FSA's FHR API.
 
-I aimed for the simplest solution which meets the requirements, therefore I only implemented a very simple blocking
-version of the FHR API client.
 A non-blocking version of the API client can be implemented easily using Spring's AsyncRestTemplate.
 
 Instructions:
